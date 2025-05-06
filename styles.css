@@ -1135,6 +1135,9 @@ button:hover{
 }
 
 @media (width <=400px){
+    .hero_header{
+        margin-top: 40%;
+    }
     .hero_content h1{
         font-size: 2.8rem;
     }
