@@ -34,10 +34,27 @@ var typed = new Typed('.text', {
 let bar = document.querySelector('.bars');
 let menu = document.querySelector('.menu');
 let nav = document.querySelector('nav');
+let navLinks = document.querySelectorAll('.menu li a'); 
 
 bar.addEventListener('click',() =>{
     menu.classList.toggle('show_menu');
     nav.classList.toggle('nav_border');
+});
+
+//Hide menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!menu.contains(e.target) && !bar.contains(e.target)) {
+      menu.classList.remove('show_menu');
+      nav.classList.remove('nav_border');
+  }
+});
+
+// Hide menu when clicking on a nav link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+      menu.classList.remove('show_menu');
+      nav.classList.remove('nav_border');
+  });
 });
 
 // contact me form

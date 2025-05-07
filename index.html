@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
     <!-- Font Awesome Icons -->
      <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
 </head>
 
 <body>
@@ -24,17 +24,21 @@
                 <img src="Images/logo.png" alt="">
             </div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="bars"> 
                 <i class="ri-menu-2-fill"></i>
             </div>
         </nav>
+
+
         <!-- Hero Header -->
-        <div class="hero_header">
+        <div class="hero_header" id="header">
             <img src="Images/shape-one.png" alt="" class="hero_shape">
             <img src="Images/border-one.png" alt="" class="hero_shape border_shape">
             <div class="hero_img">
@@ -64,8 +68,8 @@
     </header>
 
      <!-- About  -->
-    <section class="about">
-        <img src="Images/about-shape-1.png" alt="" class="about_shape about_shape1">
+    <section class="about" id="about">
+        <img src="Images/about-shape-1.png" alt="" class="about_shape about_shape1" >
         <img src="Images/about-shape-2.png" alt="" class="about_shape about_shape2">
         <img src="Images/about-shape-3.png" alt="" class="about_shape about_shape3">
         <div class="heading">
@@ -139,107 +143,113 @@
 
     </section>
 
-    <!-- EDUCATION EXPERIENCE -->
-    <section class="education_experience">
-        <img src="Images/achieve-shape-1.png" alt="" class="achieve_shape achieve_shape1">
-        <img src="Images/achieve-shape-2.png" alt="" class="achieve_shape achieve_shape2">
-        <img src="Images/about-shape-3.png" alt="" class="achieve_shape achieve_shape3">
+    <section class="skills_education">
         <div class="heading">
             <h1>What I <span>Achieve</span></h1>
             <div class="anim_line_box"></div>
         </div>
-        <div class="education_btn">
-            <button class="education">Education</button>
-            <!-- <button class="experience">Experience</button> -->
-        </div>
-        <div class="education_container">
-            <div class="education_left">
-                <div class="education_box show_box">
-                    <h2>B Tech - <span>2027</span></h2>
-                    <p>Babu Banarasi Das University Lucknow, Computer Science and Engineering, Currently Pursuing</p>
+        <!-- EDUCATION EXPERIENCE -->
+        <div class="education_experience" id="education">
+            <img src="Images/achieve-shape-1.png" alt="" class="achieve_shape achieve_shape1">
+            <img src="Images/achieve-shape-2.png" alt="" class="achieve_shape achieve_shape2">
+            <img src="Images/about-shape-3.png" alt="" class="achieve_shape achieve_shape3">
+            <div class="sub_heading">
+                <h3>Education</h3>
+            </div>
+            <div class="education_container">
+                <div class="education_left">
+                    <div class="education_box show_box">
+                        <h2>B Tech - <span>2027</span></h2>
+                        <p>Babu Banarasi Das University Lucknow, Computer Science and Engineering, Currently Pursuing</p>
+                    </div>
+                    <div class="education_box hide_box">
+                        <h2>DCA <span></span></h2>
+                        <p>Diploma in Computer Applications (DCA), 2022, Completed</p>
+                    </div>
+                    <div class="education_box show_box">
+                        <h2>Intermediate - <span>2022</span></h2>
+                        <p>S.P.B. Inter College, Puraina, Maharajganj, UP Board, 71.xx%</p>
+                    </div>
+                    <div class="education_box hide_box">
+                        <h2>High School - <span>2020</span></h2>
+                        <p>S.P.B. Inter College, Puraina, Maharajganj, UP Board, 83.16%</p>
+                    </div>
                 </div>
-                <div class="education_box hide_box">
-                    <h2>Intermediate - <span>2022</span></h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptas, dolor suscipit aliquam fugiat</p>
-                </div>
-                <div class="education_box show_box">
-                    <h2>Intermediate - <span>2022</span></h2>
-                    <p>S.P.B. Inter College, Puraina, Maharajganj, UP Board, 71.xx%</p>
-                </div>
-                <div class="education_box hide_box">
-                    <h2>learning <span></span></h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptas, dolor suscipit aliquam fugiat</p>
+                <div class="gap_line"></div>
+                <div class="education_right">
+                    <div class="education_right_box hide_box">
+                        <h2>Learnign - <span>finding</span></h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptas, dolor suscipit aliquam fugiat</p>
+                    </div>
+                    <div class="education_right_box show_box">
+                        <h2>DCA <span></span></h2>
+                        <p>Diploma in Computer Applications (DCA), 2022, Completed</p>
+                    </div>
+                    <div class="education_right_box hide_box">
+                        <h2>learing - <span>Fnding</span></h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptas, dolor suscipit aliquam fugiat</p>
+                    </div>
+                    <div class="education_right_box show_box">
+                        <h2>High School - <span>2020</span></h2>
+                        <p>S.P.B. Inter College, Puraina, Maharajganj, UP Board, 83.16%</p>
+                    </div>
                 </div>
             </div>
-            <div class="gap_line"></div>
-            <div class="education_right">
-                <div class="education_right_box hide_box">
-                    <h2>Learnign - <span>finding</span></h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptas, dolor suscipit aliquam fugiat</p>
-                </div>
-                <div class="education_right_box show_box">
-                    <h2>DCA <span></span></h2>
-                    <p>Diploma in Computer Applications (DCA), 2022, Completed</p>
-                </div>
-                <div class="education_right_box hide_box">
-                    <h2>learing - <span>Fnding</span></h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptas, dolor suscipit aliquam fugiat</p>
-                </div>
-                <div class="education_right_box show_box">
-                    <h2>High School - <span>2020</span></h2>
-                    <p>S.P.B. Inter College, Puraina, Maharajganj, UP Board, 83.16%</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES CARDS -->
-     <section class="service_cards">
-        <div class="service_card">
-            <img src="Images/service-1.png" alt="" class="serivce_img">
-            <h2>C 🔧</h2>
-            <p>Started programming journey with C, built strong logic skills </p>
-        </div>
-        <div class="service_card">
-            <img src="Images/service-2.png" alt="" class="serivce_img">
-            <h2>Python 🐍</h2>
-            <p>Used Python for a Restaurant Billing System project, hackathon participation</p>
-        </div>
-        <div class="service_card">
-            <img src="Images/service-3.png" alt="" class="serivce_img">
-            <h2>Java ☕</h2>
-            <p>Learning Java for OOP, file handling, exception handling, and threads.</p>
-        </div>
-        <div class="service_card">
-            <img src="Images/service-4.png" alt="" class="serivce_img">
-            <h2>DSA 🧠</h2>
-            <p>Learning DSA, completed linked list, recursion, and queues; continuing further topics.</p>
-        </div>
-        <div class="service_card">
-            <img src="Images/service-4.png" alt="" class="serivce_img">
-            <h2>HTML & CSS 🌐🎨</h2>
-            <p>Built small projects, recently created portfolio with HTML and CSS</p>
-        </div>
-        <div class="service_card">
-            <img src="Images/service-4.png" alt="" class="serivce_img">
-            <h2>JavaScript 💻</h2>
-            <p>Recently started JavaScript, learning interactive web development.</p>
-        </div>
-        <div class="service_card">
-            <img src="Images/service-4.png" alt="" class="serivce_img">
-            <h2>SQL 🗃️</h2>
-            <p>Currently learning SQL for database management and query optimization.</p>
-        </div>
-        <div class="service_card">
-            <img src="Images/service-4.png" alt="" class="serivce_img">
-            <h2>GitHub 🚀</h2>
-            <p>Basic knowledge of GitHub, learning version control and collaboration.</p>
         </div>
         
-     </section>
+
+        <!-- SERVICES CARDS -->
+        <div class="skills" id="skills">
+            <div class="sub_heading">
+                <h3>Skills</h3>
+            </div>
+            <div class="service_cards">
+                <div class="service_card">
+                    <img src="Images/service-1.png" alt="" class="serivce_img">
+                    <h2>C 🔧</h2>
+                    <p>Started programming journey with C, built strong logic skills </p>
+                </div>
+                <div class="service_card">
+                    <img src="Images/service-2.png" alt="" class="serivce_img">
+                    <h2>Python 🐍</h2>
+                    <p>Used Python for a Restaurant Billing System project, hackathon participation</p>
+                </div>
+                <div class="service_card">
+                    <img src="Images/service-3.png" alt="" class="serivce_img">
+                    <h2>Java ☕</h2>
+                    <p>Learning Java for OOP, file handling, exception handling, and threads.</p>
+                </div>
+                <div class="service_card">
+                    <img src="Images/service-4.png" alt="" class="serivce_img">
+                    <h2>DSA 🧠</h2>
+                    <p>Learning DSA, completed linked list, recursion, and queues; continuing further topics.</p>
+                </div>
+                <div class="service_card">
+                    <img src="Images/service-4.png" alt="" class="serivce_img">
+                    <h2>HTML & CSS 🌐🎨</h2>
+                    <p>Built small projects, recently created portfolio with HTML and CSS</p>
+                </div>
+                <div class="service_card">
+                    <img src="Images/service-4.png" alt="" class="serivce_img">
+                    <h2>JavaScript 💻</h2>
+                    <p>Recently started JavaScript, learning interactive web development.</p>
+                </div>
+                <div class="service_card">
+                    <img src="Images/service-4.png" alt="" class="serivce_img">
+                    <h2>SQL 🗃️</h2>
+                    <p>Currently learning SQL for database management and query optimization.</p>
+                </div>
+                <div class="service_card">
+                    <img src="Images/service-4.png" alt="" class="serivce_img">
+                    <h2>GitHub 🚀</h2>
+                    <p>Basic knowledge of GitHub, learning version control and collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
 
     <!-- FEATURED PROJECTS -->
-     <section class="projects">
+     <section class="projects" id="projects">
         <div class="heading">
             <h1>Featured <span>Projects</span></h1>
             <div class="anim_line_box"></div>
@@ -325,82 +335,85 @@
 
     <!-- second contact me sectoin -->
 
-    <div class="contact_me_container">
+    <div class="contact_me_container" id="contact">
         <span class="big-circle"></span>
         <img src="Images/shape.png" class="square" alt="" />
         <div class="form">
-          <div class="contact-info">
-            <h3 class="title">Let's get in touch</h3>
-            <p class="text">
-                Whether it's a project or just a hello,<br>
-                I’d love to hear from you!
-            </p>
-  
-            <div class="info">
-              <div class="information">
-                <img src="Images/location.png" class="contact_icon" alt="" />
-                <p>Lucknow, UP, India</p>
-              </div>
-              <div class="information">
-                <img src="Images/email.png" class="contact_icon" alt="" />
-                <p>mhsiddiqui027@gmail.com</p>
-              </div>
-              <div class="information">
-                <img src="Images/phone.png" class="contact_icon" alt="" />
-                <p>+91 9721347971</p>
-              </div>
+            <div class="contact-info">
+                <h3 class="contact_title">Let's get in touch</h3>
+                <p class="contact_text">
+                    Whether it's a project or just a hello,<br>
+                    I’d love to hear from you!
+                </p>
+
+                <div class="info">
+                <div class="information">
+                    <img src="Images/location.png" class="contact_icon" alt="" />
+                    <p>Lucknow, UP, India</p>
+                </div>
+                <div class="information">
+                    <img src="Images/email.png" class="contact_icon" alt="" />
+                    <p>mhsiddiqui027@gmail.com</p>
+                </div>
+                <div class="information">
+                    <img src="Images/phone.png" class="contact_icon" alt="" />
+                    <p>+91 9721347971</p>
+                </div>
+                </div>
+
+                <div class="social-media">
+                <p>Connect with us :</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mojammil-husain-profile/">
+                    <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/mr-siddiqui27">
+                    <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mr_siddiqui.27/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                    <i class="fad fa-code"></i>
+                    </a>
+                </div>
+                </div>
             </div>
-  
-            <div class="social-media">
-              <p>Connect with us :</p>
-              <div class="social-icons">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="index.html" autocomplete="off">
+                <h3 class="contact_title">Contact us</h3>
+                <div class="input-container">
+                    <input type="text" name="name" class="input" />
+                    <label for="">Username</label>
+                    <span>Username</span>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" class="input" />
+                    <label for="">Email</label>
+                    <span>Email</span>
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" class="input" />
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                </div>
+                <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                </div>
+                <input type="submit" value="Send" class="btn" />
+                </form>
             </div>
-          </div>
-  
-          <div class="contact-form">
-            <span class="circle one"></span>
-            <span class="circle two"></span>
-  
-            <form action="index.html" autocomplete="off">
-              <h3 class="title">Contact us</h3>
-              <div class="input-container">
-                <input type="text" name="name" class="input" />
-                <label for="">Username</label>
-                <span>Username</span>
-              </div>
-              <div class="input-container">
-                <input type="email" name="email" class="input" />
-                <label for="">Email</label>
-                <span>Email</span>
-              </div>
-              <div class="input-container">
-                <input type="tel" name="phone" class="input" />
-                <label for="">Phone</label>
-                <span>Phone</span>
-              </div>
-              <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
-                <label for="">Message</label>
-                <span>Message</span>
-              </div>
-              <input type="submit" value="Send" class="btn" />
-            </form>
-          </div>
         </div>
-      </div>
+    </div>
 
 
 

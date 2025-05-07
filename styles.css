@@ -488,7 +488,9 @@ button:hover{
 .education_experience{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     position: relative;
 }
 .education_btn{
@@ -637,6 +639,32 @@ button:hover{
 
 
 /* SERVICES CARDS SECTION*/
+
+
+.skills_education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+
+}
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sub_heading h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--prime-color);
+    /* font-family: 'Raleway', sans-serif; */
+}
 
 .service_cards{
     display: grid;
@@ -895,7 +923,7 @@ form {
   position: relative;
 }
 
-.title {
+.contact_title {
   color: #fff;
   font-weight: 500;
   font-size: 1.5rem;
@@ -1019,11 +1047,11 @@ textarea.input {
   position: relative;
 }
 
-.contact-info .title {
+.contact-info .contact_title {
   color: var(--prime-color);
 }
 
-.text {
+.contact_text {
   color: #333;
   margin: 1.5rem 0 2rem 0;
 }
@@ -1271,6 +1299,7 @@ textarea.input {
         opacity: 1;
         height: 420px;
     }
+    
     section{
         flex-direction: column;
     }
@@ -1348,6 +1377,9 @@ textarea.input {
         top: -20%;
     }
 
+    .sub_heading h3{
+        font-size: 2rem;
+    }
     
 }
 
@@ -1366,6 +1398,7 @@ textarea.input {
     }
     .hero_header{
         margin-top: 90%;
+        padding-left: 5%;
     }
     .hero_content h1{
         font-size: 4rem;
@@ -1383,7 +1416,7 @@ textarea.input {
         right: -10%;
     }
     .hero_bg_shape1{
-        top: 35%;
+        top: 50%;
     }
     .hero_shape{
         top: 74%;
@@ -1403,7 +1436,7 @@ textarea.input {
         top: 95%;
     }
     .hero_bg_shape2{
-        top: 35%;
+        top: 15%;
     }
     .about_image{
         width: 100%;
@@ -1444,6 +1477,7 @@ textarea.input {
 @media (width <= 450px){
     .hero_header{
         margin-top: 80%;
+        padding-left: 5%;
     }
     .hero_content h1{
         font-size: 3rem;
@@ -1461,6 +1495,15 @@ textarea.input {
         width: 120%;
         height: 55%;
     }
+    .sub_heading h3{
+        font-size: 1.8rem;
+    }
+    .hire_me_btn,
+    .download_cv_btn{
+        width: 80px;
+        height: 40px;
+        font-size: 0.7rem;
+    }
 }
 
 @media (width <=400px){
@@ -1473,12 +1516,7 @@ textarea.input {
     .hero_content h3{
         font-size: 1rem;
     }
-    .hire_me_btn,
-    .download_cv_btn{
-        font-size: 0.7rem;
-        flex: 1;
-        width: 100px;
-    }
+    
 
 }
 
@@ -1513,7 +1551,7 @@ textarea.input {
       right: 50%;
     }
   
-    .text {
+    .contact_text {
       margin: 1rem 0 1.5rem 0;
     }
   
@@ -1541,13 +1579,13 @@ textarea.input {
       padding: 1.7rem 1.6rem;
     }
   
-    .text,
+    .contact_text,
     .information,
     .social-media p {
       font-size: 0.8rem;
     }
   
-    .title {
+    .contact_title {
       font-size: 1.15rem;
     }
   
