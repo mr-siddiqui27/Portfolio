@@ -25,6 +25,11 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -493,14 +498,14 @@ button:hover{
     gap: 30px;
     position: relative;
 }
-.education_btn{
+/* .education_btn{
     display: flex;
     justify-content: center;
-    /* width: 25%;
+    width: 25%;
     padding: 10px;
     border-radius: 50px;
-    border: 1px solid var(--dark-color); */
-}
+    border: 1px solid var(--dark-color);
+} */
 
 /* .education_btn button:active,
 .education_btn button:focus{
@@ -509,10 +514,10 @@ button:hover{
     border-color: var(--prime-color);
 } */
 
-.education_btn .education{
+/* .education_btn .education{
     background-color: var(--prime-color);
     color: var(--white-color);
-}
+} */
 
 .education_container{
     display: flex;
@@ -587,6 +592,7 @@ button:hover{
 
 .hide_box{
     opacity: 0;
+    visibility: hidden;
 }
 
 .gap_line{
@@ -838,12 +844,22 @@ button:hover{
     font-size: 1rem;
     font-weight: 300;
 }
-.project_info span{
+.project_info .toggle-btn{
     font-size: 1rem;
     font-weight: 500;
     color: var(--black-color);
 }
 
+.toggle-btn {
+    font-weight: 300;
+    color: var(--black-color);
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.toggle-btn:hover {
+    color: var(--prime-color);
+}
 
 
 
@@ -861,7 +877,7 @@ textarea {
   width: 100%;
   min-height: 100vh;
   padding: 5% 12%;
-  background-color: #fafafa;
+  background-color: var(--white-color);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1144,9 +1160,6 @@ textarea.input {
 
 
 
-
-
-
 /*                       MQ SECTION                    */
 
 @media (max-width:1200px){
@@ -1377,9 +1390,15 @@ textarea.input {
         top: -20%;
     }
 
+    .heading h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
     .sub_heading h3{
         font-size: 2rem;
     }
+
     
 }
 
@@ -1463,6 +1482,7 @@ textarea.input {
     }
     .hide_box{
         opacity: 1 !important;
+        visibility: visible !important;
     }
     .service_cards,
     .projects_cards{
@@ -1517,11 +1537,17 @@ textarea.input {
         font-size: 1rem;
     }
     
+}
 
+@media (width <=370px){
+    .hero_header{
+        margin-top: 80%;
+        padding-left: 5%;
+    }
 }
 
 
-/*  SECOND CONTACT ME SECTION */
+/* CONTACT ME SECTION */
 @media (max-width: 850px) {
     .form {
       grid-template-columns: 1fr;
@@ -1546,7 +1572,7 @@ textarea.input {
     }
   
     .big-circle {
-      bottom: 75%;
+      bottom: 60%;
       transform: scale(0.9) translate(-40%, 30%);
       right: 50%;
     }

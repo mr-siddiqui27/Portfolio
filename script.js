@@ -57,6 +57,35 @@ navLinks.forEach(link => {
   });
 });
 
+
+
+
+// Projects section
+
+function toggleText(btn) {
+  const shortText = btn.parentElement.querySelector('.short-text');
+  const fullText = btn.parentElement.querySelector('.full-text');
+
+  if (fullText.style.display === "none") {
+      fullText.style.display = "inline";
+      btn.textContent = "Show Less";
+  } else {
+      fullText.style.display = "none";
+      btn.textContent = "Read More";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // contact me form
  
 const inputs = document.querySelectorAll(".input");
