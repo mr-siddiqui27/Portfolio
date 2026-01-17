@@ -95,8 +95,9 @@ nav{
     align-items: center;
     padding: 5% 12%;
     padding-left: 0%;
-    gap: 5%;
-    height: 90vh;
+    padding-top: 15%;
+    /* gap: 10%; */
+    height: auto;
     position: relative;
     z-index: 1;
 }
@@ -1260,14 +1261,19 @@ textarea.input {
 }
 
 @media (width <= 950px){
-    .hero_img img{
+     .hero_img,
+    .hero_shape{
         width: 100%;
-    }
-    .hero_img{
-        width: 85%;
     }
 }
 @media (max-width:900px){
+
+    .hero_img,
+    .hero_shape{
+        width: 100%;
+    }
+
+
     .bars{
         display: flex;
         justify-content: center;
@@ -1324,7 +1330,8 @@ textarea.input {
     }
     .hero_header{
         flex-direction: column-reverse;
-        margin-top: 60%;
+        padding-top: 25%;
+        gap: 50px;
     }
     .hero_content{
         width: 100%;
@@ -1381,6 +1388,11 @@ textarea.input {
 }
 
 @media (width <= 750px){
+     .hero_img,
+    .hero_shape{
+        width: 100%;
+    }
+
     .hero_content h1{
         font-size: 4.2rem;
     }
@@ -1408,6 +1420,14 @@ textarea.input {
     
 }
 
+@media (width <= 600px){
+    .hero_img,
+    .hero_shape{
+        width: 100%;
+    }
+}
+
+
 @media (width <= 500px){
     .bottom_bg_text,
     .top_bg_text,
@@ -1422,7 +1442,7 @@ textarea.input {
         width: 100%;
     }
     .hero_header{
-        margin-top: 90%;
+        padding-top: 40%;
         padding-left: 5%;
     }
     .hero_content h1{
@@ -1502,7 +1522,7 @@ textarea.input {
 
 @media (width <= 450px){
     .hero_header{
-        margin-top: 80%;
+        padding-top: 35%;
         padding-left: 5%;
     }
     .hero_content h1{
@@ -1534,7 +1554,7 @@ textarea.input {
 
 @media (width <=400px){
     .hero_header{
-        margin-top: 40%;
+        padding-top: 40%;
     }
     .hero_content h1{
         font-size: 2.8rem;
